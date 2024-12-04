@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Header from "../Components/Header";
+import Header from "../components/Header.jsx";
 import axios from "axios";
 import star from '../assets/icons/rating-icon.png'
 
@@ -78,7 +78,7 @@ const Home = () => {
             ))}
           </div>
         )  : (
-          <div className="m-52">No products found</div>
+          <div className="flex justify-center">No products found</div>
         )}
 
         {/* Pagination Controls */}
